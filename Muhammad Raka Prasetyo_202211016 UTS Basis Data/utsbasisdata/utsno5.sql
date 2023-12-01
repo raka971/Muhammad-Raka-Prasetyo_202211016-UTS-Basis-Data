@@ -1,0 +1,2 @@
+select product_name, product_price, product_category, status, product.product_id, stock.product_id quantity 
+from product inner join stock on stock.product_id = product.product_id where quantity > 10 
